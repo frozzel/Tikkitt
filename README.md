@@ -1,5 +1,5 @@
 <div>
-<a href=""><img src="https://github.com/frozzel/Tikkitt/blob/a9de49eb038d85075feae35df89c7116078019bb/Tikkitt.png" align="center" height="" width="100%" ></a></div>
+<a href=""><img src="https://github.com/frozzel/Tikkitt/blob/b946d6711fee933b84ad5ddec6a2a993029d920b/Tikkitt-Banner.png" align="center" height="" width="100%" ></a></div>
 
 ---
 
