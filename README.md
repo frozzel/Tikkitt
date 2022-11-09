@@ -1,5 +1,5 @@
 <div>
-<a href="https://linkedin.com/in/dennis-hickox-1b0a10227"><img src="https://github.com/frozzel/frozzel/blob/bf59f45d16828e49511240cac5efaf575112cbc2/programming_code_technology_computerwebsite_banner_432008923.jpg" align="center" height="" width="100%" ></a></div>
+<a href=""><img src="https://github.com/frozzel/Tikkitt/blob/a9de49eb038d85075feae35df89c7116078019bb/Tikkitt.png" align="center" height="" width="100%" ></a></div>
 
 ---
 
