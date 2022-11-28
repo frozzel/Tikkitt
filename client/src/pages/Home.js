@@ -36,7 +36,14 @@ const Home = () => {
     </ul>
   </div>
 </div>
-
+<div>
+  <p className= "what-is-tikkitt ">What is Tikkitt?</p><br>
+  </br>
+  <p className= "what-is-tikkitt-body">Finally, a simple and easy way for you to assign tasks - or "tikkitts" to other employees or group members. Tikkitt allows users to create tasks and monitor the working status of each project assigned, through a simple and easy to use platform. Try it now!</p>
+<section className= "container"> 
+    <button type= "button">Learn More</button><br></br>
+</section>
+</div>
 
             
       </div>

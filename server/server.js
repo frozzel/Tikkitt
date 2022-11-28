@@ -5,6 +5,7 @@ const { authMiddleware } = require('./utils/auth');
 
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
+const { Project } = require('./models');
 
 const PORT = process.env.PORT || 3002;
 const app = express();
