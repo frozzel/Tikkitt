@@ -1,0 +1,25 @@
+
+.portfolio-page {
+    padding-left: 100px;
+    padding-right: 50px;
+    width: calc(100% - 150px);
+    position: initial;
+    height: 100%;
+    overflow: auto;
+
+    
+
+    .card-grid-view {
+        // display: flex;
+        justify-content: center;
+        flex-direction: co;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        
+      }
+     
+      
+      
+}
