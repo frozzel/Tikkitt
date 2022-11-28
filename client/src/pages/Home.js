@@ -39,12 +39,27 @@ const Home = () => {
 <div>
   <p className= "what-is-tikkitt ">What is Tikkitt?</p><br>
   </br>
-  <p className= "what-is-tikkitt-body">Finally, a simple and easy way for you to assign tasks - or "tikkitts" to other employees or group members. Tikkitt allows users to create tasks and monitor the working status of each project assigned, through a simple and easy to use platform. Try it now!</p>
+  <p className= "what-is-tikkitt-body">Finally, a simple and easy way for you to assign tasks - or "Tikkitts" to other employees or group members. Tikkitt allows users to create tasks and monitor the working status of each project assigned, through a simple and easy to use platform. Try it now!</p>
 <section className= "container"> 
     <button type= "button">Learn More</button><br></br>
 </section>
 </div>
-
+<div>
+  <p className= "how-does-it-work ">How does it work?</p><br>
+  </br>
+  <p className= "how-does-it-work-body">Create a user accout for free! Start by creating a new Tikkit with your project info, and assigning it to another user. You can monitor the working status and see if the Tikkit has been completed. Once done, you can archive and move on to the next!</p>
+<section className= "container"> 
+    <button type= "button">Try Now</button><br></br>
+</section>
+</div>
+<div>
+  <p className= "help-my-business">How can Tikkit help my business?</p><br>
+  </br>
+  <p className= "help-my-business-body">Get more done! Finally an easy way to create projects with completely customizable tasks, and the ability to assign them to specific individuals. Tikkit allows you to track the on-going process of your assigments, while also allowing you to store and archive them once completed. </p>
+<section className= "container"> 
+    <button type= "button">Testimonials</button><br></br>
+</section>
+</div>
             
       </div>
     </main>
