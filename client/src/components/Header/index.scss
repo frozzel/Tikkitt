@@ -1,0 +1,157 @@
+.nav-bar {
+   background: #94D3AC;
+   width: 100%;
+   position: initial;
+   top: 0;
+   
+   
+ 
+   .logo {
+     display: inline-flex;
+     padding: 8px 0;
+     align-items: flex-start;
+     margin-left: 15px;
+ 
+     img {
+       display: block;
+       margin: 8px auto;
+       width: 79px;
+       height: auto;
+      
+     }
+   }
+   nav {
+       display: inline-block;
+       text-align: center;
+       justify-content: center;
+       position: absolute;
+       width: 100%;
+       flex-direction: column;
+       a {
+         font-size: 32px;
+         color: #655C56;
+         display: inline-block;
+         margin: 15px;
+        //  margin-right: 50px;
+         line-height: 51px;
+         height: 51px;
+         position: relative;
+         text-decoration: none;
+   
+         i {
+           transition: all 0.3s ease-out;
+         }
+   
+         &:hover {
+           color: #EFFCEF;
+   
+           svg {
+             opacity: 0;
+           }
+   
+           &:after {
+             opacity: 1;
+           }
+         }
+   
+         &:after {
+           content: '';
+           font-size: 9px;
+           letter-spacing: 2px;
+           position: absolute;
+           bottom: 0;
+           display: block;
+           width: 100%;
+           text-align: center;
+           opacity: 0;
+           -webkit-transition: all 0.3s ease-out;
+           transition: all 0.3s ease-out;
+         }
+   
+         &:first-child {
+           &:after {
+             content: 'HOME';
+           }
+         }
+       }
+   
+       a.about-link {
+         &:after {
+           content: 'LOGIN';
+         }
+       }
+   
+       a.contact-link {
+         &:after {
+           content: 'PROJECTS';
+         }
+       }
+       a.contact-me {
+        &:after {
+          content: 'ME';
+        }
+      }
+   
+       a.portfolio-link {
+         &:after {
+           content: 'SIGNUP';
+         }
+       }
+   
+       a.active {
+         svg {
+           color: #EFFCEF;
+         }
+       }
+     }
+   
+   }
+   
+   
+   @media screen and (max-width: 320px) {
+     .nav-bar { 
+       background: #94D3AC;
+       position: initial;
+       height: auto;
+       min-height: auto;
+   
+        ul, nav {
+         display: none;
+        }
+   
+        nav, ul{
+         width: 100%;
+         top: 0;
+         left: 0;
+         background: #94D3AC;
+         height: 35%;
+         margin: 0;
+         z-index: 2;
+         position: fixed;
+         
+   
+         &.mobile-show {
+           display: block;
+         }
+   
+         a {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+         }
+   
+         a:after {
+           opacity: 1;
+           position: initial;
+           width: auto;
+           margin-left: 10PX;
+         }
+   
+         a svg {
+           opacity: 1 !important;
+         }
+        }
+   
+       
+     }
+}

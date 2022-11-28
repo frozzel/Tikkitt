@@ -6,3 +6,10 @@
 # Tikkitt
 
 Project Managment App for allowing Tikkitt's to be assigned to team members and then completed in a timely manner. 
+
+
+Resources:
+https://react-bootstrap.github.io/getting-started/introduction
+https://colorhunt.co/palette/effcefccedd294d3ac655c56
+https://alvarotrigo.com/blog/css-text-animations/
+https://www.sliderrevolution.com/resources/css-text-animation/
