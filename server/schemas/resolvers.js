@@ -83,6 +83,22 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
+    updateProject: async (parent, { projectId }, context) => {
+      if (context.user) {
+        const project = await Project.findOneAndUpdate({
+          _id: projectId,
+          projectAuthor: context.user.username,
+        });
+
+        await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $push: { projects: project._id } }
+        );
+
+        return project;
+      }
+      throw new AuthenticationError('You need to be logged in!');
+    },
     removeProject: async (parent, { projectId }, context) => {
       if (context.user) {
         const project = await Project.findOneAndDelete({
@@ -99,9 +115,25 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
+    updateTikkit: async (parent, { projectId }, context) => {
+      if (context.user) {
+        const project = await Project.findOneAndUpdate({
+          _id: projectId,
+          projectAuthor: context.user.username,
+        });
+
+        await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $push: { projects: project._id } }
+        );
+
+        return project;
+      }
+      throw new AuthenticationError('You need to be logged in!');
+    },
     removeTikkit: async (parent, { projectId, tikkitId }, context) => {
       if (context.user) {
-        return Project.findOneAndUpdate(
+        return Project.findOneAndDelete(
           { _id: projectId },
           {
             $pull: {
@@ -116,6 +148,7 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
+
   },
 };
 
