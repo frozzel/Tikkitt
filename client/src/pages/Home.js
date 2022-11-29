@@ -47,20 +47,19 @@ const Home = () => {
 <div>
   <p className= "how-does-it-work ">How does it work?</p><br>
   </br>
-  <p className= "how-does-it-work-body">Create a user accout for free! Start by creating a new Tikkit with your project info, and assigning it to another user. You can monitor the working status and see if the Tikkit has been completed. Once done, you can archive and move on to the next!</p>
+  <p className= "how-does-it-work-body">Create a user accout for free! Start by creating a new Tikkitt with your project info, and assigning it to another user. You can monitor the working status and see if the Tikkit has been completed. Once done, you can archive and move on to the next!</p>
 <section className= "container"> 
     <button type= "button">Try Now</button><br></br>
 </section>
 </div>
 <div>
-  <p className= "help-my-business">How can Tikkit help my business?</p><br>
+  <p className= "help-my-business">How can Tikkitt help my business?</p><br>
   </br>
-  <p className= "help-my-business-body">Get more done! Finally an easy way to create projects with completely customizable tasks, and the ability to assign them to specific individuals. Tikkit allows you to track the on-going process of your assigments, while also allowing you to store and archive them once completed. </p>
+  <p className= "help-my-business-body">Get more done! Finally an easy way to create projects with completely customizable tasks, and the ability to assign them to specific individuals. Tikkitt allows you to track the on-going process of your assigments, while also allowing you to store and archive them once completed. </p>
 <section className= "container"> 
     <button type= "button">Testimonials</button><br></br>
 </section>
-</div>
-            
+</div>   
       </div>
     </main>
   );
