@@ -11,7 +11,7 @@ const projectSchema = new Schema({
   },
   projectAuthor: {
     type: String,
-    required: true,
+    required: false,
     trim: true,
   },
   projectName: {
@@ -54,6 +54,13 @@ const projectSchema = new Schema({
         type: Date,
         default: Date.now,
         get: (timestamp) => dateFormat(timestamp),
+      },
+      dueDate: {
+        type: String,
+      },
+      tikkitAssignee: {
+        type: Schema.Types.ObjectId,
+        ref: 'User',
       },
     },
   ],

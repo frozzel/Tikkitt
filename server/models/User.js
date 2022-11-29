@@ -29,6 +29,12 @@ const userSchema = new Schema({
       ref: 'Project',
     },
   ],
+ tikkits: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Project',
+    },
+  ],
 });
 
 userSchema.pre('save', async function (next) {
