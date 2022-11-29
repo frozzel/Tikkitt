@@ -16,7 +16,7 @@ import SingleProject from './pages/SingleProject';
 import Profile from './pages/Profile';
 import Header from './components/Header';
 import AllProjects from './pages/AllProjects';
-// import Test from '../src/pages/Test'
+
 
 
 
@@ -80,10 +80,7 @@ function App() {
                 path="/allprojects"
                 element={<AllProjects />}
               />
-               {/* <Route 
-                path="/test"
-                element={<Test />}
-              /> */}
+               
             </Routes>
           
       </Router>
