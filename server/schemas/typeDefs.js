@@ -23,6 +23,7 @@ const typeDefs = gql`
   type Tikkit {
     _id: ID
     tikkitText: String
+    tikkitAssignee: [User]
     tikkitAuthor: String
     reviewedBy: String
     completeReview: Boolean
@@ -47,9 +48,9 @@ const typeDefs = gql`
     login(email: String!, password: String!): Auth
     addProject(projectText: String!, projectName: String): Project
     addTikkit(projectId: ID!, tikkitText: String!): Project
+    updateProject(projectId: ID!): Project
+    updateTikkit(projectId: ID!, tikkitText: String!): Project
     removeProject(projectId: ID!): Project
     removeTikkit(projectId: ID!, tikkitId: ID!): Project
   }
 `;
-
-module.exports = typeDefs;
