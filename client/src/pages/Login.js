@@ -43,8 +43,11 @@ const Login = (props) => {
 
   return (
     <main className=" justify-center">
+       <div className='row ' style={{ height: "25vh"}}></div>
+      <div className='row'>
+      <div className="col-4 col-lg-4"></div>
       <div className="col-3 col-lg-3">
-        <div className="">
+        <div className="logCard">
           <h4 className=" ">Login</h4>
           <div className="">
             {data ? (
@@ -91,6 +94,7 @@ const Login = (props) => {
             )}
           </div>
         </div>
+      </div>
       </div>
     </main>
   );
