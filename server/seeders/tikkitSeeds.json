@@ -1,0 +1,27 @@
+[
+    {
+        "tikkitText": "this is a test",
+        "TikkitAuthor": "someone",
+        "dueDate": "10/22/23"
+    }, 
+    {
+        "tikkitText": "just saying something",
+        "TikkitAuthor": "garybusey",
+        "dueDate": "9/14/23"
+    },
+    {
+        "tikkitText": "just another test",
+        "TikkitAuthor": "MichaelJordan",
+        "dueDate": "6/12/23"
+    },
+    {
+        "tikkitText": "writing something here",
+        "TikkitAuthor": "drbob",
+        "dueDate": "2/14/23"
+    },
+    {
+        "tikkitText": "a person wrote something here",
+        "TikkitAuthor": "jean",
+        "dueDate": "7/7/23"
+    }    
+]

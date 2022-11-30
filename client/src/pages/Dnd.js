@@ -1,35 +1,13 @@
-import React from 'react';
-import { v4 as uuidv4 } from 'uuid';
-// Import the `useParams()` hook
-import { useParams } from 'react-router-dom';
-import { useQuery } from '@apollo/client';
-
-// import TikkitList from '../components/TikkitList';
-import TikkitForm from '../components/TikkitForm';
-
-
-import { DragDropContext, Droppable } from 'react-beautiful-dnd';
+import { DragDropContext, Droppable,  } from 'react-beautiful-dnd';
 import TaskCard from '../components/TaskCard';
 import  { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
-import { QUERY_SINGLE_PROJECT } from '../utils/queries';
-import './SingleProject.scss';
+import { tikkits } from './SingleProject';
 
+console.log(tikkits)
 
-
-
-const SingleProject = () => {
-  // Use `useParams()` to retrieve value of the route parameter `:profileId`
-  const { projectId } = useParams();
-
-  const { loading, data } = useQuery(QUERY_SINGLE_PROJECT, {
-    // pass URL parameter
-    variables: { projectId: projectId },
-  });
-
-  const project = data?.project || {};
-    const tikkits =project.tikkits
-   const testData2 = {
+const testData2 = {
     [uuidv4()]: {
       title: 'To-do',
       items: tikkits,
@@ -119,46 +97,4 @@ const SingleProject = () => {
       </DragDropContext>
     );
   };
-  
-
-
-
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-  return (
-    <div className="m-3 p-4">
-      <h3 className="card-header1  p-2 m-0  " style={{color: '#655C56'}}>
-        {project.projectAuthor} <br />
-        {project.projectName}<br />
-        <span style={{ fontSize: '1rem' }}>
-           {project.createdAt}
-        </span>
-      </h3>
-      <h3 className="card-header1  p-2 m-0  " style={{color: '#655C56'}}>
-        <blockquote
-          className="p-4"
-          style={{
-            fontSize: '1.5rem',
-            fontStyle: 'bold',
-            border: '2px solid #655C56',
-            lineHeight: '1.5',
-          }}
-        >
-          {project.projectText}
-        </blockquote>
-      </h3>
-      <div className="m-3 p-4" style={{ border: '1px solid #655C56', backgroundColor: "#EFFCEF" }}>
-        <TikkitForm projectId={project._id} />
-        
-      </div>
-      <div className="my-3">
-        {/* <TikkitList tikkits={project.tikkits} /> */}
-        <Dnd />
-      </div>
-     
-    </div>
-  );
-};
-
-export default SingleProject;
+  export default Dnd;

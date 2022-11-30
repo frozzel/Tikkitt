@@ -54,6 +54,9 @@ const projectSchema = new Schema({
         type: Date,
         default: Date.now,
         get: (timestamp) => dateFormat(timestamp),
+      }, 
+      dueDate: {
+        type: String, 
       },
       dueDate: {
         type: Date,

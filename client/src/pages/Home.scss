@@ -1,162 +1,282 @@
 
 
 .main{
-    // background-color: #FFE1E1;
-    height: 800px;
+  // background-color: #FFE1E1;
+  height: 40vh;
+  // background: #1a1e23;
 }
 .animate-charcter
 {
 //    text-transform: uppercase;
-  background-image: linear-gradient(
-    -200deg,
-    #655C56 0%,
-    #94D3AC 29%,
-    #655C56 67%,
-    #94D3AC 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  top: 10%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 5s linear infinite;
-  display: inline-block;
-      font-size: 190px;
+background-image: linear-gradient(
+  -200deg,
+  #655C56 0%,
+  #94D3AC 29%,
+  #655C56 67%,
+  #94D3AC 100%
+);
+background-size: auto auto;
+background-clip: border-box;
+background-size: 200% auto;
+color: #fff;
+background-clip: text;
+top: 10%;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: textclip 5s linear infinite;
+display: inline-block;
+    font-size: 190px;
 }
 
 @keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
+to {
+  background-position: 200% center;
+}
 }
 .content {
-    position: relative;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 160px;
-    overflow:hidden;
-    
-    font-family: 'Lato', sans-serif;
-    font-size: 35px;
-    line-height: 40px;
-    color: #655C56;
-    
-    &__container {
-      font-weight: 600;
-      overflow: hidden;
-      height: 40px;
-      padding: 0 40px;
+  position: relative;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 160px;
+  overflow:hidden;
   
-      &:before {
-        content: '';
-        left: 0;
-      }
+  font-family: 'Lato', sans-serif;
+  font-size: 35px;
+  line-height: 40px;
+  color: #655C56;
   
-      &:after {
-        content: '';
-        position: relative;
-        right: 0;
-      }
-  
-      &:after, &:before {
-        position: absolute;
-        top: 0;
-        
-        color: #16a085;
-        font-size: 60px;
-        line-height: 40px;
-        
-        -webkit-animation-name: opacity;
-        -webkit-animation-duration: 2s;
-        -webkit-animation-iteration-count: infinite;
-        animation-name: opacity;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
-      }
-  
-      &__text {
-        display: inline;
-        // float: left;
-        margin: 0;
-      }
-  
-      &__list {
-        margin-top: 0;
-        // padding-left: 110px;
-        text-align: center;
-        list-style: none;
-        
-        -webkit-animation-name: change;
-        -webkit-animation-duration: 20s;
-        -webkit-animation-iteration-count: infinite;
-        animation-name: change;
-        animation-duration: 20s;
-        animation-iteration-count: infinite;
-  
-        &__item {
-          line-height:40px;
-          margin:0;
-        }
+  &__container {
+    font-weight: 600;
+    overflow: hidden;
+    height: 40px;
+    padding: 0 40px;
+
+    &:before {
+      content: '';
+      left: 0;
+    }
+
+    &:after {
+      content: '';
+      position: relative;
+      right: 0;
+    }
+
+    &:after, &:before {
+      position: absolute;
+      top: 0;
+      
+      color: #16a085;
+      font-size: 60px;
+      line-height: 40px;
+      
+      -webkit-animation-name: opacity;
+      -webkit-animation-duration: 2s;
+      -webkit-animation-iteration-count: infinite;
+      animation-name: opacity;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    &__text {
+      display: inline;
+      // float: left;
+      margin: 0;
+    }
+
+    &__list {
+      margin-top: 0;
+      // padding-left: 110px;
+      text-align: center;
+      list-style: none;
+      
+      -webkit-animation-name: change;
+      -webkit-animation-duration: 20s;
+      -webkit-animation-iteration-count: infinite;
+      animation-name: change;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+
+      &__item {
+        line-height:40px;
+        margin:0;
       }
     }
   }
+}
+
+@-webkit-keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-webkit-keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+@-o-keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-o-keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+@-moz-keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-moz-keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+@keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+.sect1{
+  // background-color: #FFE1E1;
+  height: 60vh;
+  display: flex;
+  // background: #1a1e23;
   
-  @-webkit-keyframes opacity {
-    0%, 100% {opacity:0;}
-    50% {opacity:1;}
-  }
   
-  @-webkit-keyframes change {
-    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
-    16.66%, 29.32% {transform:translate3d(0,-25%,0);}
-    33.32%,45.98% {transform:translate3d(0,-50%,0);}
-    49.98%,62.64% {transform:translate3d(0,-75%,0);}
-    66.64%,79.3% {transform:translate3d(0,-50%,0);}
-    83.3%,95.96% {transform:translate3d(0,-25%,0);}
-  }
-  
-  @-o-keyframes opacity {
-    0%, 100% {opacity:0;}
-    50% {opacity:1;}
-  }
-  
-  @-o-keyframes change {
-    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
-    16.66%, 29.32% {transform:translate3d(0,-25%,0);}
-    33.32%,45.98% {transform:translate3d(0,-50%,0);}
-    49.98%,62.64% {transform:translate3d(0,-75%,0);}
-    66.64%,79.3% {transform:translate3d(0,-50%,0);}
-    83.3%,95.96% {transform:translate3d(0,-25%,0);}
-  }
-  
-  @-moz-keyframes opacity {
-    0%, 100% {opacity:0;}
-    50% {opacity:1;}
-  }
-  
-  @-moz-keyframes change {
-    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
-    16.66%, 29.32% {transform:translate3d(0,-25%,0);}
-    33.32%,45.98% {transform:translate3d(0,-50%,0);}
-    49.98%,62.64% {transform:translate3d(0,-75%,0);}
-    66.64%,79.3% {transform:translate3d(0,-50%,0);}
-    83.3%,95.96% {transform:translate3d(0,-25%,0);}
-  }
-  
-  @keyframes opacity {
-    0%, 100% {opacity:0;}
-    50% {opacity:1;}
-  }
-  
-  @keyframes change {
-    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
-    16.66%, 29.32% {transform:translate3d(0,-25%,0);}
-    33.32%,45.98% {transform:translate3d(0,-50%,0);}
-    49.98%,62.64% {transform:translate3d(0,-75%,0);}
-    66.64%,79.3% {transform:translate3d(0,-50%,0);}
-    83.3%,95.96% {transform:translate3d(0,-25%,0);}
-  }
+}
+.opener{
+  // height: 80%;
+  // align-items: center;
+  margin: 3%;
+  margin-left: 10%;
+  position: relative;
+  display: flex;
+ background-color: #FFE1E1;
+ border-radius: 1px 200px 1px;
+ height: 50vh;
+ width: 50vh;
+ flex-direction: row;
+  animation: infinite fadeInLeft 8s ;
+  animation-fill-mode: forwards;
+  // box-shadow: -2px -2px #655C56;
+}
+.text1{
+  text-align: center;
+  color: #655C56;
+  font-size: 3vh;
+  padding: 10%;
+  animation: infinite fadeIn 8s ;
+  animation-fill-mode: forwards;
+  flex-direction: row;
+}
+
+.sect2{
+  background-color: #655C56;
+  height: 90vh;
+}
+.opener2{
+  // height: 80%;
+  // align-items: center;
+  // margin: 5%;
+  margin-left: 59%;
+  position: absolute;
+  display: flex;
+ background-color: #EFFCEF;
+//  border-radius: 50%;
+ border-bottom-left-radius: 175%;
+ border-top-left-radius: 175%;
+ height: 90vh;
+ width: 90vh;
+ flex-direction: row;
+  animation: infinite fadeInRight 7s;
+  animation-fill-mode: forwards;
+  // box-shadow: -2px -2px #655C56;
+}
+.text2{
+  text-align: center;
+  color: #FFE1E1;
+  font-size: 3vh;
+  padding: 10%;
+  animation: infinite fadeIn 7s ;
+  animation-fill-mode: backwards;
+  flex-direction: row;
+}
+.sect3{
+  background: #94D3AC;
+  height: 60vh;
+  text-align: center;
+  margin: 0;
+}
+
+
+.typewriter h1 {
+  color: #FFE1E1;
+  font-family: monospace;
+  font-size: 4vh;
+  flex-direction: row;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #FFE1E1; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  margin-top: 15%;
+  margin-left: 25%;
+  animation: infinite
+    typing 6.5s steps(40, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #FFE1E1 }
+}
+
+.opener3{
+  // height: 80%;
+  // align-items: center;
+  margin: 3%;
+  margin-left: 1%;
+  position: absolute;
+  display: flex;
+ background-color: #EFFCEF;
+ border-radius: 300px 1px 300px;
+ height: 50vh;
+ width: 50vh;
+ flex-direction: row;
+  animation: infinite fadeIn 8s ;
+  animation-fill-mode: forwards;
+  // box-shadow: -2px -2px #655C56;
+}

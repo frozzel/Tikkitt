@@ -39,7 +39,7 @@ const handleDeleteTikkit= async (projectId) => {
         className="p-5 display-inline-block"
         style={{ borderBottom: '1px solid #655C56', color: '#655C56' }}
       >
-        tikkits
+        Tikkitt's
       </h3>
       <div className="flex-row my-4">
         {tikkits &&

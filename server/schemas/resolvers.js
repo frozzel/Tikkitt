@@ -68,20 +68,20 @@ const resolvers = {
       return { token, user };
     },
     addProject: async (parent, { projectText, projectName }, context) => {
-      // if (context.user) {
+      if (context.user) {
         const project = await Project.create({
           projectText,
           projectName,
           projectAuthor: "username",
         });
 
-        // await User.findOneAndUpdate(
-        //   { _id: context.user._id },
-        //   { $addToSet: { projects: project._id } }
-        // );
+        await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $addToSet: { projects: project._id } }
+        );
 
         return project;
-      // }
+      }
       throw new AuthenticationError('You need to be logged in!');
     },
     addTikkit: async (parent, { projectId, tikkitText }, context) => {
@@ -90,7 +90,7 @@ const resolvers = {
           { _id: projectId },
           {
             $addToSet: {
-              tikkits: { tikkitText, tikkitAuthor: context.user.username },
+              tikkits: { tikkitText, tikkitAuthor: context.user.username, dueDate },
             },
           },
           {
@@ -102,23 +102,23 @@ const resolvers = {
       throw new AuthenticationError('You need to be logged in!');
     },
     updateProject: async (parent, { projectId }, context) => {
-      // if (context.user) {
+      if (context.user) {
         const project = await Project.findOneAndUpdate({
           _id: projectId,
-          projectAuthor: "username",
+          projectAuthor: context.user.username,
         });
 
-        // await User.findOneAndUpdate(
-        //   { _id: context.user._id },
-        //   { $push: { projects: project._id } }
-        // );
+        await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $push: { projects: project._id } }
+        );
 
         return project;
-      // }
+      }
       throw new AuthenticationError('You need to be logged in!');
     },
     removeProject: async (parent, { projectId }, context) => {
-      // if (context.user) {
+      if (context.user) {
         const project = await Project.findOneAndDelete({
           _id: projectId,
           projectAuthor: context.user.username,
@@ -130,14 +130,15 @@ const resolvers = {
         );
 
         return project;
-      // }
+      }
       throw new AuthenticationError('You need to be logged in!');
     },
     updateTikkit: async (parent, { projectId }, context) => {
-      // if (context.user) {
+      if (context.user) {
         const project = await Project.findOneAndUpdate({
           _id: projectId,
-          projectAuthor: "username",
+          projectAuthor: context.user.username,
+          dueDate, 
         });
 
         await User.findOneAndUpdate(
@@ -146,12 +147,12 @@ const resolvers = {
         );
 
         return project;
-      // }
+      }
       throw new AuthenticationError('You need to be logged in!');
     },
     removeTikkit: async (parent, { projectId, tikkitId }, context) => {
-      // if (context.user) {
-        return Project.findOneAndDelete(
+      if (context.user) {
+        return Project.findOneAndUpdate(
           { _id: projectId },
           {
             $pull: {
@@ -163,10 +164,9 @@ const resolvers = {
           },
           { new: true }
         );
-      // }
+      }
       throw new AuthenticationError('You need to be logged in!');
     },
-
   },
 };
 

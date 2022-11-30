@@ -53,10 +53,12 @@ const typeDefs = gql`
     addProject(projectText: String!, projectName: String): Project
     addTikkit(projectId: ID!, tikkitText: String!, dueDate: Date): Project
     updateProject(projectId: ID!): Project
-    updateTikkit(projectId: ID!, tikkitText: String!, duDate: Date): Project
+    updateTikkit(projectId: ID!, tikkitText: String!, duDate: Date, dueDate: String!): Project
+    updateProject(projectId: ID!): Project
+    updateTikkit(projectId: ID!, tikkitText: String!, dueDate: String!): Project
     removeProject(projectId: ID!): Project
     removeTikkit(projectId: ID!, tikkitId: ID!): Project
   }
 `;
 
-module.exports = typeDefs;
+module.exports = typeDefs; 

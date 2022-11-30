@@ -41,7 +41,7 @@ const TikkitForm = ({ projectId }) => {
 
   return (
     <div>
-      <h4>New Tikkit Todo</h4>
+      <h4>New Tikkitt Todo</h4>
 
       {Auth.loggedIn() ? (
         <>
@@ -71,7 +71,7 @@ const TikkitForm = ({ projectId }) => {
         </>
       ) : (
         <p>
-          You need to be logged in to share your thoughts. Please{' '}
+          You need to be logged in to make a tikkitt Please{' '}
           <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
         </p>
       )}
