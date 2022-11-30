@@ -5,12 +5,13 @@ import Auth from '../../utils/auth';
 
 
 const TikkitList = ({ tikkits = [] }) => {
+const [deleteTikkit, { error }] = useMutation(DELETE_TIKKIT);
+
   if (!tikkits.length) {
     return <h3>No Tikkits Yet</h3>;
   }
 
 
-const [deleteTikkit, { error }] = useMutation(DELETE_TIKKIT);
 
 const handleDeleteTikkit= async (projectId) => {
   const token = Auth.loggedIn() ? Auth.getToken() : null;
@@ -19,16 +20,16 @@ const handleDeleteTikkit= async (projectId) => {
     return false;
   }
 
-  try {
+  // try {
      await deleteTikkit({
       variables: { projectId }
     });
-    if (error) {
-      throw new Error('something went wrong!');
-    }
-  } catch (err) {
-    console.error(err);
-  }
+    // if (error) {
+    //   throw new Error('something went wrong!');
+    // }
+  // } catch (err) {
+  //   console.error(err);
+  // }
 };
 
 
