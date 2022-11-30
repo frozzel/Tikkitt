@@ -85,6 +85,7 @@ export const ADD_TIKKIT = gql`
         _id
         tikkitText
         createdAt
+        dueDate
       }
     }
   }
@@ -101,6 +102,7 @@ export const UPDATE_TIKKIT = gql`
         _id
         tikkitText
         updatedAt
+        dueDate
       }
     }
   }
