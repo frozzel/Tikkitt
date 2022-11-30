@@ -56,7 +56,7 @@ const projectSchema = new Schema({
         get: (timestamp) => dateFormat(timestamp),
       },
       dueDate: {
-        type: String,
+        type: Date,
       },
       tikkitAssignee: {
         type: Schema.Types.ObjectId,

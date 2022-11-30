@@ -2,8 +2,26 @@ const { AuthenticationError } = require('apollo-server-express');
 const { User, Project } = require('../models');
 // const Projects = require('../models/Projects');
 const { signToken } = require('../utils/auth');
+const { GraphQLScalarType } = require('graphql');
+const { Kind } = require('graphql/language');
 
 const resolvers = {
+  Date: new GraphQLScalarType({
+    name: 'Date',
+    description: 'Date custom scalar type',
+    parseValue(value) {
+        return new Date(value); // value from the client
+    },
+    serialize(value) {
+        return value.getTime(); // value sent to the client
+    },
+    parseLiteral(ast) {
+        if (ast.kind === Kind.INT) {
+        return parseInt(ast.value, 10); // ast value is always in string format
+        }
+        return null;
+    },
+  }),
   Query: {
     users: async () => {
       return User.find().populate('projects');
@@ -67,7 +85,7 @@ const resolvers = {
       throw new AuthenticationError('You need to be logged in!');
     },
     addTikkit: async (parent, { projectId, tikkitText }, context) => {
-      // if (context.user) {
+      if (context.user) {
         return Project.findOneAndUpdate(
           { _id: projectId },
           {
@@ -80,16 +98,15 @@ const resolvers = {
             runValidators: true,
           }
         );
-      // }
+      }
       throw new AuthenticationError('You need to be logged in!');
     },
     updateProject: async (parent, { projectId }, context) => {
       // if (context.user) {
-        const project = await Project.findOneAndUpdate(
-          { _id: projectId} ,
-          { projectAuthor: "username",
-        },
-        { new: true });
+        const project = await Project.findOneAndUpdate({
+          _id: projectId,
+          projectAuthor: "username",
+        });
 
         // await User.findOneAndUpdate(
         //   { _id: context.user._id },
@@ -120,8 +137,7 @@ const resolvers = {
       // if (context.user) {
         const project = await Project.findOneAndUpdate({
           _id: projectId,
-          projectAuthor: context.user.username,
-          dueDate,
+          projectAuthor: "username",
         });
 
         await User.findOneAndUpdate(
