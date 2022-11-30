@@ -56,7 +56,7 @@ const Home = () => {
         </div>
         <div className='sect2 row'>
           <div className='text2 col-6'>
-            <h1> "Collaberation with teams keeps you organized and up to date with every step!"</h1>
+            <h1> "Collaboration with teams keeps you organized and up to date with your tasks!"</h1>
 
           </div>
           <div className='opener2 col-6'>
