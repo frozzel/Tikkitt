@@ -23,7 +23,7 @@ const ProjectList = ({
         projects.map((project) => (
           
           <div key={project._id} className="row card  card1 mb-3">
-            <h4 className="card-header1 p-2 m-0"><FontAwesomeIcon icon={faClipboardList} color="#655C56" size='1.5x' /><span>         {project.projectName}</span></h4>
+            <h4 className="card-header1 p-2 m-0"><FontAwesomeIcon icon={faClipboardList} color="#655C56" size='1x' /><span>         {project.projectName}</span></h4>
             <div className="card-body1  p-2">
               <p>{project.projectText}</p>
               <Link

@@ -4,3 +4,16 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+.Allf{
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+}
+.Allf input{
+    justify-content: center;
+    margin: 5vh;
+    margin-right: 1px;
+    height: 30px;
+}
