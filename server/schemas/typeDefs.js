@@ -23,10 +23,12 @@ const typeDefs = gql`
   type Tikkit {
     _id: ID
     tikkitText: String
+    tikkitAssignee: [User]
     tikkitAuthor: String
     reviewedBy: String
     completeReview: Boolean
     createdAt: String
+    dueDate: String
   }
 
   type Auth {
@@ -46,10 +48,12 @@ const typeDefs = gql`
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
     addProject(projectText: String!, projectName: String): Project
-    addTikkit(projectId: ID!, tikkitText: String!): Project
+    addTikkit(projectId: ID!, tikkitText: String!, dueDate: String!): Project
+    updateProject(projectId: ID!): Project
+    updateTikkit(projectId: ID!, tikkitText: String!, dueDate: String!): Project
     removeProject(projectId: ID!): Project
     removeTikkit(projectId: ID!, tikkitId: ID!): Project
   }
 `;
 
-module.exports = typeDefs;
+module.exports = typeDefs; 
