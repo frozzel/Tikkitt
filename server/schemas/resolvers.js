@@ -72,7 +72,7 @@ const resolvers = {
           { _id: projectId },
           {
             $addToSet: {
-              tikkits: { tikkitText, tikkitAuthor: context.user.username },
+              tikkits: { tikkitText, tikkitAuthor: context.user.username, dueDate },
             },
           },
           {
@@ -120,6 +120,7 @@ const resolvers = {
         const project = await Project.findOneAndUpdate({
           _id: projectId,
           projectAuthor: context.user.username,
+          dueDate, 
         });
 
         await User.findOneAndUpdate(
