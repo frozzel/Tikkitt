@@ -50,7 +50,7 @@ const Home = () => {
           <img src={projectM} alt="Logo" className=""  />
           </div>
           <div className='text1 col-6'>
-            <h1> "Tikkit is a simple project management application!"</h1>
+            <h1> "Tikkitt is a simple project management application!"</h1>
 
           </div>
         </div>
@@ -71,7 +71,7 @@ const Home = () => {
           </div>
             <div className="typewriter ">
               
-              <h1>Assign Tikkett's with due dates & notifications!</h1>
+              <h1>Assign Tikkitt's with due dates & notifications!</h1>
             </div>
           
         </div>

@@ -37,22 +37,26 @@ const Profile = () => {
   }
 
   return (
-    <div>
+    <div className='proR flex-row'>
+      <div className=' proH col-3'>
       {!userParam && (
           <div
-          className="card-header1  p-2 m-0  " style={{color: '#655C56'}}>
+          className="card-header  p-2 m-0  " style={{color: '#655C56'}}>
             
             <ProjectForm />
           </div>
+          
         )}
-      <div className=" flex-row justify-center mb-3">
-        <h4 className="col-12 col-md-10  p-3 mb-5">
-          Viewing {userParam ? `${user.username}'s` : 'your' } Projects.
+        </div>
+        <div className=' col-9'>
+      <div className="flex-row justify-center mb-3">
+        <h4 className="">
+          .....Viewing {userParam ? `${user.username}'s` : 'your' } Projects.
         </h4>
         </div>
-        <div className='container portfolio-page'>
+        <div className='row '>
         
-        <div className="card-grid-view ">
+        <div className="flex-row AllC ">
           <ProjectList
             projects={user.projects}
             title={`${user.username}'s projects...`}
@@ -63,7 +67,7 @@ const Profile = () => {
           
         </div>
         </div>
-        
+        </div>
       </div>
 
   );

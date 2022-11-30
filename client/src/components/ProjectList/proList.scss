@@ -1,7 +1,7 @@
 .card1 {
-    width: 30%;
+    width: 25vw;
     box-shadow: 2px 2px #a89a8f;
-    
+    margin: 15px;
     color: #655C56;
     border-radius: 0;
 }
@@ -15,7 +15,7 @@
     
     color: #655C56;
 }
-.card-body1:hover{
+.card-body1 a:hover{
     color:#94D3AC ;
 }
 .btn2{
@@ -26,4 +26,24 @@
 }
 .btn2:hover{
     color:#94D3AC ;
+}
+.AllC{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.proR{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.proH{
+    height: 100vh;
+    border-right: 1px solid  #655C56;
+    border-bottom: 1px solid  #655C56;
+    background-color: #EFFCEF;
+    box-shadow: 1px 1px #94D3AC;
+    border-bottom-right-radius: 13px;
 }
