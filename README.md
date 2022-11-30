@@ -63,3 +63,6 @@ Inspiration, code snippets, etc.
 * [Colorhunt Palette](https://colorhunt.co/palette/effcefccedd294d3ac655c56)
 * [Alvarotrigo](https://alvarotrigo.com/blog/css-text-animations/)
 * [Slider Revolution](https://www.sliderrevolution.com/resources/css-text-animation/)
+
+
+https://pngtree.com/so/project-managment
