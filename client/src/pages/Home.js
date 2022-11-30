@@ -1,12 +1,16 @@
 import React from 'react';
 import './Home.scss';
-// import logo from '../components/Header/logo.svg'
+import projectM from '../images/projectM.png'
+import colab from '../images/colab.png'
+import Assign from '../images/Assign.png'
+import 'animate.css';
 
 
 
 
 
 const Home = () => {
+  
   
 
 
@@ -22,17 +26,17 @@ const Home = () => {
   </div>
 </div>
 
-<div class="content">
-  <div class="content__container">
-    <p class="content__container__text">
+<div className="content">
+  <div className="content__container">
+    <p className="content__container__text">
       
     </p>
     
-    <ul class="content__container__list">
-      <li class="content__container__list__item">Team Collaboration</li>
-      <li class="content__container__list__item">Plan Your Projects</li>
-      <li class="content__container__list__item">Meet your Deadlines</li>
-      <li class="content__container__list__item">Get Organized!</li>
+    <ul className="content__container__list">
+      <li className="content__container__list__item">Team Collaboration</li>
+      <li className="content__container__list__item">Plan Your Projects</li>
+      <li className="content__container__list__item">Meet your Deadlines</li>
+      <li className="content__container__list__item">Get Organized!</li>
     </ul>
   </div>
 </div>
@@ -61,6 +65,38 @@ const Home = () => {
 </section>
 </div>   
       </div>
+      {/* next segment; */}
+        <div className='sect1'>
+          <div className='opener col-6'>
+          <img src={projectM} alt="Logo" className=""  />
+          </div>
+          <div className='text1 col-6'>
+            <h1> "Tikkit is a simple project management application!"</h1>
+
+          </div>
+        </div>
+        <div className='sect2 row'>
+          <div className='text2 col-6'>
+            <h1> "Collaberation with teams keeps you organized and up to date with every step!"</h1>
+
+          </div>
+          <div className='opener2 col-6'>
+            <img src={colab} alt="Logo" className=""  />
+          </div>
+          
+        </div>
+
+        <div className='sect3 row'>
+        <div className='opener3 col-3'>
+            <img src={Assign} alt="Logo" className=""  />
+          </div>
+            <div class="typewriter ">
+              
+              <h1>Assign Tikkett's with due dates & notifications!</h1>
+            </div>
+          
+        </div>
+
     </main>
   );
 };
