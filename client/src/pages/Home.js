@@ -69,7 +69,7 @@ const Home = () => {
         <div className='opener3 col-3'>
             <img src={Assign} alt="Logo" className=""  />
           </div>
-            <div class="typewriter ">
+            <div className="typewriter ">
               
               <h1>Assign Tikkett's with due dates & notifications!</h1>
             </div>
