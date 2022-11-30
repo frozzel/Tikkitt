@@ -1,9 +1,36 @@
 import React from 'react';
+import { useMutation } from '@apollo/client';
+import { DELETE_TIKKIT } from '../../utils/mutations';
+import Auth from '../../utils/auth';
+
 
 const TikkitList = ({ tikkits = [] }) => {
   if (!tikkits.length) {
     return <h3>No Tikkits Yet</h3>;
   }
+
+
+const [deleteTikkit, { error }] = useMutation(DELETE_TIKKIT);
+
+const handleDeleteTikkit= async (projectId) => {
+  const token = Auth.loggedIn() ? Auth.getToken() : null;
+
+  if (!token) {
+    return false;
+  }
+
+  try {
+     await deleteTikkit({
+      variables: { projectId }
+    });
+    if (error) {
+      throw new Error('something went wrong!');
+    }
+  } catch (err) {
+    console.error(err);
+  }
+};
+
 
   return (
     <>
@@ -25,6 +52,13 @@ const TikkitList = ({ tikkits = [] }) => {
                   </span>
                 </h5>
                 <p className="card-body">{tikkit.tikkitText}</p>
+                <div className="col-12 col-lg-3">
+                {tikkits && tikkits._id === tikkit._id &&(
+                  <button className="btn btn-sm btn-primary " type="submit">
+                  Create 
+                </button>
+                )}
+              </div>
               </div>
             </div>
           ))}

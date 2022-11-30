@@ -86,6 +86,7 @@ export const ADD_TIKKIT = gql`
         tikkitText
         createdAt
         dueDate
+        
       }
     }
   }

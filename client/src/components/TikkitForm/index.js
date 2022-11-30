@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 
-import { ADD_TIKKIT } from '../../utils/mutations';
+import { ADD_TIKKIT, DELETE_TIKKIT } from '../../utils/mutations';
 
 import Auth from '../../utils/auth';
 
@@ -66,6 +66,7 @@ const TikkitForm = ({ projectId }) => {
                 Create 
               </button>
             </div>
+       
           </form>
         </>
       ) : (
