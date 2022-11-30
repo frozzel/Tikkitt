@@ -70,7 +70,7 @@ const ProjectForm = () => {
 
   return (
     <div>
-                    <h4><FontAwesomeIcon icon={faClipboardList} color="#655C56" size='1.5x' />
+                    <h4><FontAwesomeIcon icon={faClipboardList} color="#655C56" size='1x' />
       <span>  Create Your New Project!</span></h4>
 
       {Auth.loggedIn() ? (
