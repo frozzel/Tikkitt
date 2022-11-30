@@ -90,7 +90,7 @@ const resolvers = {
           { _id: projectId },
           {
             $addToSet: {
-              tikkits: { tikkitText, tikkitAuthor: context.user.username, dueDate },
+              tikkits: { tikkitText, tikkitAuthor: context.user.username },
             },
           },
           {
