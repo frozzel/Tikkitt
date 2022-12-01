@@ -295,6 +295,7 @@ to {
     flex-direction: row;
     display: flex;
     position: absolute;
+    justify-content: space-between;
     // flex-wrap: wrap;
     
   .card {
@@ -376,4 +377,19 @@ hr .new1 {
 .date {
     background-color: #ccc
 }
+}
+.sect5{
+  background: #FFE1E1;
+  height: 70vh;
+  text-align: center;
+  margin: 0;
+  .icons{
+    margin: 27px;
+    margin-bottom: 1px;
+    height: 15vw;
+    // color: #efefef;
+  }
+  .icons:hover{
+    color: #655C56;
+  }
 }

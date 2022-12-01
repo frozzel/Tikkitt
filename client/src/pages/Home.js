@@ -5,7 +5,13 @@ import colab from '../images/colab.png'
 import Assign from '../images/Assign.png'
 import 'animate.css';
 import Dennis from '../images/dennis.png'
-
+import {
+  faSass,
+  faNodeJs,
+  faBootstrap,
+  faReact,
+} from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 
@@ -87,8 +93,6 @@ const Home = () => {
                   <img src={Dennis} alt="dennis head shot"height="100" width="100" />  
                     </button> <span className="name mt-3">Dennis Hickox</span> <span className="idd">frozzel@me.com</span> 
                       <div className="d-flex flex-row justify-content-center align-items-center gap-2"> <span className="idd1">MERN Developer</span></div> 
-                        {/* <div className="d-flex flex-row justify-content-center align-items-center mt-3"> <span className="number">1069 <span className="follow">Followers</span></span> </div>  */}
-                          {/* <div className=" d-flex mt-2"> <button className="btn1 btn-dark">Edit Profile</button> </div>  */}
                             <div className="text mt-3">Project Contributions:<br /><br />MongoDb, Server and React setup. UI animations. Create and Read functions from client side to DB. React Beautiful Dnd deployment! </div> 
                              </div></div>
             </div>
@@ -100,8 +104,6 @@ const Home = () => {
                   <img src={Dennis} alt="dennis head shot"height="100" width="100" />  
                     </button> <span className="name mt-3">Dennis Hickox</span> <span className="idd">frozzel@me.com</span> 
                       <div className="d-flex flex-row justify-content-center align-items-center gap-2"> <span className="idd1">MERN Developer</span></div> 
-                        {/* <div className="d-flex flex-row justify-content-center align-items-center mt-3"> <span className="number">1069 <span className="follow">Followers</span></span> </div>  */}
-                          {/* <div className=" d-flex mt-2"> <button className="btn1 btn-dark">Edit Profile</button> </div>  */}
                             <div className="text mt-3">Project Contributions:<br /><br />MongoDb, Server and React setup. UI animations. Create and Read functions from client side to DB. React Beautiful Dnd deployment! </div> 
                              </div></div>
             </div>
@@ -113,8 +115,6 @@ const Home = () => {
                   <img src={Dennis} alt="dennis head shot"height="100" width="100" />  
                     </button> <span className="name mt-3">Dennis Hickox</span> <span className="idd">frozzel@me.com</span> 
                       <div className="d-flex flex-row justify-content-center align-items-center gap-2"> <span className="idd1">MERN Developer</span></div> 
-                        {/* <div className="d-flex flex-row justify-content-center align-items-center mt-3"> <span className="number">1069 <span className="follow">Followers</span></span> </div>  */}
-                          {/* <div className=" d-flex mt-2"> <button className="btn1 btn-dark">Edit Profile</button> </div>  */}
                             <div className="text mt-3">Project Contributions:<br /><br />MongoDb, Server and React setup. UI animations. Create and Read functions from client side to DB. React Beautiful Dnd deployment! </div> 
                              </div></div>
             </div>
@@ -126,8 +126,6 @@ const Home = () => {
                   <img src={Dennis} alt="dennis head shot"height="100" width="100" />  
                     </button> <span className="name mt-3">Dennis Hickox</span> <span className="idd">frozzel@me.com</span> 
                       <div className="d-flex flex-row justify-content-center align-items-center gap-2"> <span className="idd1">MERN Developer</span></div> 
-                        {/* <div className="d-flex flex-row justify-content-center align-items-center mt-3"> <span className="number">1069 <span className="follow">Followers</span></span> </div>  */}
-                          {/* <div className=" d-flex mt-2"> <button className="btn1 btn-dark">Edit Profile</button> </div>  */}
                             <div className="text mt-3">Project Contributions:<br /><br />MongoDb, Server and React setup. UI animations. Create and Read functions from client side to DB. React Beautiful Dnd deployment! </div> 
                              </div></div>
             </div>
@@ -136,6 +134,16 @@ const Home = () => {
 
 
         </div>
+
+        <div className='sect5 flex-row'>
+        <div className='Text4 col-12'><h1>Technologies Used</h1></div>
+        <FontAwesomeIcon className="icons" icon={faReact} color="#94D3AC" />
+        <FontAwesomeIcon className="icons" icon={faBootstrap} color="#94D3AC" />
+        <FontAwesomeIcon className="icons" icon={faSass} color="#94D3AC" />
+        <FontAwesomeIcon className="icons" icon={faNodeJs} color="#94D3AC" />
+        <div className='Text4 col-12'><h1>& many more!</h1></div>
+        </div>
+
 
     </main>
   );
