@@ -282,7 +282,7 @@ to {
 }
 .sect4{
   background: white;
-  height: 90vh;
+  height: 100vh;
   text-align: center;
   margin: 0;
 }
@@ -391,5 +391,184 @@ hr .new1 {
   }
   .icons:hover{
     color: #655C56;
+  }
+}
+.sect6{
+  background: #655C56;
+  height: 90vh;
+  text-align: left;
+  
+  margin: 0;
+  .App-logo {
+    height: 30vmin;
+    pointer-events: none;
+    padding: 10px;
+
+  }
+  .text6{
+    color: #94D3AC;
+    text-align: center;
+    font-size: 3vw;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 6s reverse;
+     
+    }
+  }
+  
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg)translateX(80%)scale(0.1);
+    }
+    to {
+      transform: rotate(30deg)translateX(1%)scale(1.5);
+    }
+  }
+  .content {
+    position: relative;
+    top: 10%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    height: 160px;
+    overflow:hidden;
+    
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
+    line-height: 40px;
+    color: #EFFCEF;
+    
+    &__container {
+      font-weight: 600;
+      overflow: hidden;
+      height: 40px;
+      padding: 0 40px;
+  
+      &:before {
+        content: '';
+        left: 0;
+      }
+  
+      &:after {
+        content: '';
+        position: relative;
+        right: 0;
+      }
+  
+      &:after, &:before {
+        position: absolute;
+        top: 0;
+        
+        color: #16a085;
+        font-size: 60px;
+        line-height: 40px;
+        
+        -webkit-animation-name: opacity;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        animation-name: opacity;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+  
+      &__text {
+        // display: inline;
+        // float: left;
+        margin: 0;
+      }
+  
+      &__list {
+        margin-top: 0;
+        // padding-left: 110px;
+        text-align: center;
+        list-style: none;
+        
+        -webkit-animation-name: change;
+        -webkit-animation-duration: 20s;
+        -webkit-animation-iteration-count: infinite;
+        animation-name: change;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+  
+        &__item {
+          line-height:40px;
+          margin:0;
+        }
+      }
+    }
+  }
+  
+  @-webkit-keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  
+  @-webkit-keyframes change {
+    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+    16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+    33.32%,45.98% {transform:translate3d(0,-50%,0);}
+    49.98%,62.64% {transform:translate3d(0,-75%,0);}
+    66.64%,79.3% {transform:translate3d(0,-50%,0);}
+    83.3%,95.96% {transform:translate3d(0,-25%,0);}
+  }
+  
+  @-o-keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  
+  @-o-keyframes change {
+    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+    16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+    33.32%,45.98% {transform:translate3d(0,-50%,0);}
+    49.98%,62.64% {transform:translate3d(0,-75%,0);}
+    66.64%,79.3% {transform:translate3d(0,-50%,0);}
+    83.3%,95.96% {transform:translate3d(0,-25%,0);}
+  }
+  
+  @-moz-keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  
+  @-moz-keyframes change {
+    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+    16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+    33.32%,45.98% {transform:translate3d(0,-50%,0);}
+    49.98%,62.64% {transform:translate3d(0,-75%,0);}
+    66.64%,79.3% {transform:translate3d(0,-50%,0);}
+    83.3%,95.96% {transform:translate3d(0,-25%,0);}
+  }
+  
+  @keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+  }
+  
+  @keyframes change {
+    0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+    16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+    33.32%,45.98% {transform:translate3d(0,-50%,0);}
+    49.98%,62.64% {transform:translate3d(0,-75%,0);}
+    66.64%,79.3% {transform:translate3d(0,-50%,0);}
+    83.3%,95.96% {transform:translate3d(0,-25%,0);}
+  }
+  
+  
+}
+
+.sect7{
+  background: white;
+  height: 15vh;
+  text-align: left;
+  h1{
+    color: #655C56;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-line: none;
+  }
+  a{
+    text-decoration: none;
   }
 }
