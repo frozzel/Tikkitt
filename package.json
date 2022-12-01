@@ -2,6 +2,9 @@
   "name": "tikkit",
   "version": "1.0.0",
   "description": "Project Managment Application",
+  "engines": {
+    "node": "16.17.1"
+  },
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
