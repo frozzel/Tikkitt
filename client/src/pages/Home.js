@@ -5,6 +5,8 @@ import colab from '../images/colab.png'
 import Assign from '../images/Assign.png'
 import 'animate.css';
 import Dennis from '../images/dennis.png'
+import Jessica from '../images/jessica.png'
+
 
 
 
@@ -110,12 +112,12 @@ const Home = () => {
             <div className="card p-4"> 
               <div className=" image d-flex flex-column justify-content-center align-items-center">   
                 <button className="btn btn-secondary"> 
-                  <img src={Dennis} alt="dennis head shot"height="100" width="100" />  
-                    </button> <span className="name mt-3">Dennis Hickox</span> <span className="idd">frozzel@me.com</span> 
+                  <img src={Jessica} alt="dennis head shot"height="100" width="100" />  
+                    </button> <span className="name mt-3">Jessica Ciak</span> <span className="idd">jesciak@yahoo.com</span> 
                       <div className="d-flex flex-row justify-content-center align-items-center gap-2"> <span className="idd1">MERN Developer</span></div> 
                         {/* <div className="d-flex flex-row justify-content-center align-items-center mt-3"> <span className="number">1069 <span className="follow">Followers</span></span> </div>  */}
                           {/* <div className=" d-flex mt-2"> <button className="btn1 btn-dark">Edit Profile</button> </div>  */}
-                            <div className="text mt-3">Project Contributions:<br /><br />MongoDb, Server and React setup. UI animations. Create and Read functions from client side to DB. React Beautiful Dnd deployment! </div> 
+                            <div className="text mt-3">Project Contributions:<br /><br />Apollo GraphQL query and mutation operation testing and CRUD implementation! </div> 
                              </div></div>
             </div>
 
