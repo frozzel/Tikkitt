@@ -2,7 +2,8 @@ import React from 'react';
 import { useQuery } from '@apollo/client';
 
 import ProjectList from '../components/ProjectList';
-import ProjectForm from '../components/ProjectForm';
+// import ProjectForm from '../components/ProjectForm';
+import '../app.scss';
 
 import { QUERY_PROJECTS } from '../utils/queries';
 
@@ -13,13 +14,15 @@ const AllProjects = () => {
   return (
     <main>
       <div className="">
-        <div
-          className="col-12 col-md-10 mb-3 p-3"
-         
-        >
-          <ProjectForm />
+        <div className="Allf col-12">
+          <form>
+            
+            <input></input>
+            <button className='btn btn-sm btn-primary'>Search</button>
+          </form>
+          {/* <ProjectForm /> */}
         </div>
-        <div className="col-12 col-md-8 mb-3">
+        <div className="col-12">
           {loading ? (
             <div>Loading...</div>
           ) : (

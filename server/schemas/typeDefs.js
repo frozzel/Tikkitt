@@ -51,9 +51,9 @@ const typeDefs = gql`
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
     addProject(projectText: String!, projectName: String): Project
-    addTikkit(projectId: ID!, tikkitText: String!): Project
+    addTikkit(projectId: ID!, tikkitText: String! ): Project
     updateProject(projectId: ID!): Project
-    updateTikkit(projectId: ID!, tikkitText: String!, dueDate: String!): Project
+    updateTikkit(projectId: ID!, tikkitText: String! ): Project
     removeProject(projectId: ID!): Project
     removeTikkit(projectId: ID!): Project
   }

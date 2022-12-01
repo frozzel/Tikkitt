@@ -50,18 +50,18 @@ const TikkitForm = ({ projectId }) => {
             className="flex-row justify-center justify-space-between-md align-center"
             onSubmit={handleFormSubmit}
           >
-            <div className="col-12 col-lg-9">
-              <textarea
+            <div className="">
+              <input
                 name="tikkitText"
-                placeholder="New Tikkit"
+                placeholder="New Tikkitt"
                 value={tikkitText}
                 className="form-input w-100"
                 style={{ lineHeight: '1.5', resize: 'vertical' }}
                 onChange={handleChange}
-              ></textarea>
+              ></input>
             </div>
 
-            <div className="col-12 col-lg-3">
+            <div className="">
               <button className="btn btn-sm btn-primary " type="submit">
                 Create 
               </button>

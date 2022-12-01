@@ -2,6 +2,11 @@ import React from 'react';
 import { Draggable } from 'react-beautiful-dnd';
 // import styled from 'styled-components';
 import './TaskCard.scss';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faUserFriends} from '@fortawesome/free-solid-svg-icons';
+
+
 import { useMutation } from '@apollo/client';
 import { DELETE_TIKKIT } from '../utils/mutations';
 import Auth from '../utils/auth';
@@ -40,7 +45,7 @@ const TaskCard = ({ item, index }) => {
           {...provided.dragHandleProps}
         >
           <div className="TaskInformation">
-          <p>{item.tikkitAuthor}</p>
+          <p><FontAwesomeIcon icon={faUserFriends} color="#655C56" size='1x' /><span> </span>{item.tikkitAuthor}</p>
             <p>{item.tikkitText}</p>
             <p>{item.createdAt}</p>
             <div className="secondary-details">

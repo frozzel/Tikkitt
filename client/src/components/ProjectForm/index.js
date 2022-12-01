@@ -4,6 +4,8 @@ import { useMutation } from '@apollo/client';
 
 import { ADD_PROJECT } from '../../utils/mutations';
 import { QUERY_PROJECTS, QUERY_ME } from '../../utils/queries';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faClipboardList, faGlobe} from '@fortawesome/free-solid-svg-icons';
 
 import Auth from '../../utils/auth';
 
@@ -69,7 +71,8 @@ const ProjectForm = () => {
 
   return (
     <div>
-      <h4>Create Your New Project!</h4>
+                    <h4><FontAwesomeIcon icon={faClipboardList} color="#655C56" size='1x' />
+      <span>  Create Your New Project!</span></h4>
 
       {Auth.loggedIn() ? (
         <>
@@ -78,7 +81,7 @@ const ProjectForm = () => {
             className="flex-row justify-center justify-space-between-md align-center"
             onSubmit={handleFormSubmit}
           >
-            <div className="col-12 col-lg-9">
+            <div className="col-12 col-lg-12">
               <input
                 name="projectText"
                 placeholder="Project Description!"
@@ -108,6 +111,10 @@ const ProjectForm = () => {
               </div>
             )}
           </form>
+          <br /><br /><br /><br />
+          <div className='text-center'>
+          <FontAwesomeIcon icon={faGlobe} color="#FFE1E1" size='7x' />
+          </div>
         </>
       ) : (
         <p>

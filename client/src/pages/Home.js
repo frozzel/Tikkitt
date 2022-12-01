@@ -4,6 +4,15 @@ import projectM from '../images/projectM.png'
 import colab from '../images/colab.png'
 import Assign from '../images/Assign.png'
 import 'animate.css';
+import Dennis from '../images/dennis.png'
+
+import {
+  faSass,
+  faNodeJs,
+  faBootstrap,
+  faReact,
+} from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 
@@ -50,13 +59,13 @@ const Home = () => {
           <img src={projectM} alt="Logo" className=""  />
           </div>
           <div className='text1 col-6'>
-            <h1> "Tikkit is a simple project management application!"</h1>
+            <h1> "Tikkitt is a simple project management application!"</h1>
 
           </div>
         </div>
         <div className='sect2 row'>
           <div className='text2 col-6'>
-            <h1> "Collaberation with teams keeps you organized and up to date with every step!"</h1>
+            <h1> "Collaboration with teams keeps you organized and up to date with your tasks!"</h1>
 
           </div>
           <div className='opener2 col-6'>
@@ -71,10 +80,74 @@ const Home = () => {
           </div>
             <div className="typewriter ">
               
-              <h1>Assign Tikkett's with due dates & notifications!</h1>
+              <h1>Assign Tikkitt's with due dates & notifications!</h1>
             </div>
           
         </div>
+
+        <div className='sect4 flex-row'>
+        <div className='Text4 col-12'><h1>Meet Our Development Team!</h1></div>
+        <div className='flex DevCards'>
+        <div className="container mt-4 mb-4 p-3 d-flex justify-content-center"> 
+            <div className="card p-4"> 
+              <div className=" image d-flex flex-column justify-content-center align-items-center">   
+                <button className="btn btn-secondary"> 
+                  <img src={Dennis} alt="dennis head shot"height="100" width="100" />  
+                    </button> <span className="name mt-3">Dennis Hickox</span> <span className="idd">frozzel@me.com</span> 
+                      <div className="d-flex flex-row justify-content-center align-items-center gap-2"> <span className="idd1">MERN Developer</span></div> 
+                            <div className="text mt-3">Project Contributions:<br /><br />MongoDb, Server and React setup. UI animations. Create and Read functions from client side to DB. React Beautiful Dnd deployment! </div> 
+                             </div></div>
+            </div>
+
+            <div className="container mt-4 mb-4 p-3 d-flex justify-content-center"> 
+            <div className="card p-4"> 
+              <div className=" image d-flex flex-column justify-content-center align-items-center">   
+                <button className="btn btn-secondary"> 
+                  <img src={Dennis} alt="dennis head shot"height="100" width="100" />  
+                    </button> <span className="name mt-3">Dennis Hickox</span> <span className="idd">frozzel@me.com</span> 
+                      <div className="d-flex flex-row justify-content-center align-items-center gap-2"> <span className="idd1">MERN Developer</span></div> 
+                            <div className="text mt-3">Project Contributions:<br /><br />MongoDb, Server and React setup. UI animations. Create and Read functions from client side to DB. React Beautiful Dnd deployment! </div> 
+                             </div></div>
+            </div>
+
+            <div className="container mt-4 mb-4 p-3 d-flex justify-content-center"> 
+            <div className="card p-4"> 
+              <div className=" image d-flex flex-column justify-content-center align-items-center">   
+                <button className="btn btn-secondary"> 
+                  <img src={Jessica} alt="dennis head shot"height="100" width="100" />  
+                    </button> <span className="name mt-3">Jessica Ciak</span> <span className="idd">jesciak@yahoo.com</span> 
+                      <div className="d-flex flex-row justify-content-center align-items-center gap-2"> <span className="idd1">MERN Developer</span></div> 
+
+                            <div className="text mt-3">Project Contributions:<br /><br />MongoDb, Server and React setup. UI animations. Create and Read functions from client side to DB. React Beautiful Dnd deployment! </div> 
+
+                             </div></div>
+            </div>
+
+            <div className="container mt-4 mb-4 p-3 d-flex justify-content-center"> 
+            <div className="card p-4"> 
+              <div className=" image d-flex flex-column justify-content-center align-items-center">   
+                <button className="btn btn-secondary"> 
+                  <img src={Dennis} alt="dennis head shot"height="100" width="100" />  
+                    </button> <span className="name mt-3">Dennis Hickox</span> <span className="idd">frozzel@me.com</span> 
+                      <div className="d-flex flex-row justify-content-center align-items-center gap-2"> <span className="idd1">MERN Developer</span></div> 
+                            <div className="text mt-3">Project Contributions:<br /><br />MongoDb, Server and React setup. UI animations. Create and Read functions from client side to DB. React Beautiful Dnd deployment! </div> 
+                             </div></div>
+            </div>
+
+        </div>
+
+
+        </div>
+
+        <div className='sect5 flex-row'>
+        <div className='Text4 col-12'><h1>Technologies Used</h1></div>
+        <FontAwesomeIcon className="icons" icon={faReact} color="#94D3AC" />
+        <FontAwesomeIcon className="icons" icon={faBootstrap} color="#94D3AC" />
+        <FontAwesomeIcon className="icons" icon={faSass} color="#94D3AC" />
+        <FontAwesomeIcon className="icons" icon={faNodeJs} color="#94D3AC" />
+        <div className='Text4 col-12'><h1>& many more!</h1></div>
+        </div>
+
 
     </main>
   );

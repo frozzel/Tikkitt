@@ -15,5 +15,8 @@
   "license": "EULA",
   "devDependencies": {
     "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "npm": "^9.1.2"
   }
 }
