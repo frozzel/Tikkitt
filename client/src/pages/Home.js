@@ -5,6 +5,7 @@ import colab from '../images/colab.png'
 import Assign from '../images/Assign.png'
 import 'animate.css';
 import Dennis from '../images/dennis.png'
+
 import {
   faSass,
   faNodeJs,
@@ -12,6 +13,7 @@ import {
   faReact,
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 
 
@@ -112,10 +114,12 @@ const Home = () => {
             <div className="card p-4"> 
               <div className=" image d-flex flex-column justify-content-center align-items-center">   
                 <button className="btn btn-secondary"> 
-                  <img src={Dennis} alt="dennis head shot"height="100" width="100" />  
-                    </button> <span className="name mt-3">Dennis Hickox</span> <span className="idd">frozzel@me.com</span> 
+                  <img src={Jessica} alt="dennis head shot"height="100" width="100" />  
+                    </button> <span className="name mt-3">Jessica Ciak</span> <span className="idd">jesciak@yahoo.com</span> 
                       <div className="d-flex flex-row justify-content-center align-items-center gap-2"> <span className="idd1">MERN Developer</span></div> 
+
                             <div className="text mt-3">Project Contributions:<br /><br />MongoDb, Server and React setup. UI animations. Create and Read functions from client side to DB. React Beautiful Dnd deployment! </div> 
+
                              </div></div>
             </div>
 
