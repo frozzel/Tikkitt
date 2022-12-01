@@ -6,6 +6,7 @@ import Assign from '../images/Assign.png'
 import 'animate.css';
 import Dennis from '../images/dennis.png'
 import Jessica from '../images/jessica.png'
+import Joshua from '../images/Joshua.jpeg'
 import {
   faSass,
   faNodeJs,
@@ -104,10 +105,10 @@ const Home = () => {
             <div className="card p-4"> 
               <div className=" image d-flex flex-column justify-content-center align-items-center">   
                 <button className="btn btn-secondary"> 
-                  <img src={Dennis} alt="dennis head shot"height="100" width="100" />  
-                    </button> <span className="name mt-3">Dennis Hickox</span> <span className="idd">frozzel@me.com</span> 
-                      <div className="d-flex flex-row justify-content-center align-items-center gap-2"> <span className="idd1">MERN Developer</span></div> 
-                            <div className="text mt-3">Project Contributions:<br /><br />MongoDb, Server and React setup. UI animations. Create and Read functions from client side to DB. React Beautiful Dnd deployment! </div> 
+                  <img src={Joshua} alt="joshua head shot"height="100" width="100" />  
+                    </button> <span className="name mt-3">Joshua Adam</span> <span className="idd">sales@carstock.com</span> 
+                      <div className="d-flex flex-row justify-content-center align-items-center gap-2"> <span className="idd1">MERN Developer, Strategic Partner & Investor</span></div> 
+                            <div className="text mt-3">Project Contributions:<br /><br />CRUD operations + GraphQL! Resolvers, typedefs, mutations, live chat support implementation, .com deployment! </div> 
                              </div></div>
             </div>
 
