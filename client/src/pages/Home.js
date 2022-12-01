@@ -5,7 +5,7 @@ import colab from '../images/colab.png'
 import Assign from '../images/Assign.png'
 import 'animate.css';
 import Dennis from '../images/dennis.png'
-
+import Jessica from '../images/jessica.png'
 import {
   faSass,
   faNodeJs,
@@ -118,7 +118,7 @@ const Home = () => {
                     </button> <span className="name mt-3">Jessica Ciak</span> <span className="idd">jesciak@yahoo.com</span> 
                       <div className="d-flex flex-row justify-content-center align-items-center gap-2"> <span className="idd1">MERN Developer</span></div> 
 
-                            <div className="text mt-3">Project Contributions:<br /><br />MongoDb, Server and React setup. UI animations. Create and Read functions from client side to DB. React Beautiful Dnd deployment! </div> 
+                            <div className="text mt-3">Project Contributions:<br /><br />Apollo GraphQL query and mutation operation testing and CRUD implementation!  </div> 
 
                              </div></div>
             </div>
