@@ -6,7 +6,7 @@ import Assign from '../images/Assign.png'
 import 'animate.css';
 import Dennis from '../images/dennis.png'
 import Jessica from '../images/jessica.png'
-import Joshua from '../images/Joshua.jpeg'
+import Joshua from '../images/Joshua.png'
 import {
   faSass,
   faNodeJs,
