@@ -3,7 +3,8 @@ import { v4 as uuidv4 } from 'uuid';
 // Import the `useParams()` hook
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faPollH} from '@fortawesome/free-solid-svg-icons';
 // import TikkitList from '../components/TikkitList';
 import TikkitForm from '../components/TikkitForm';
 
@@ -127,15 +128,23 @@ const SingleProject = () => {
     return <div>Loading...</div>;
   }
   return (
-    <div className="m-3 p-4">
-      <h3 className="card-header1  p-2 m-0  " style={{color: '#655C56'}}>
+    <div className="m-3">
+      <div className='flex-row Sp1 p-2' style={{backgroundColor: "#FFE1E1"}}>
+        <div className='col-1 Icon'><FontAwesomeIcon icon={faPollH} color="#655C56" size='5x' /></div>
+        <div className='col-8'>
+      <h3 className="m-2    " style={{color: '#655C56', backgroundColor: "#FFE1E1"}}>
         {project.projectAuthor} <br />
         {project.projectName}<br />
         <span style={{ fontSize: '1rem' }}>
            {project.createdAt}
         </span>
       </h3>
-      <h3 className="card-header1  p-2 m-0  " style={{color: '#655C56'}}>
+
+      </div>
+      <div className='Form col-3'><TikkitForm projectId={project._id} /></div>
+
+      </div>
+      {/* <h3 className="card-header1  p-2 m-0  " style={{color: '#655C56'}}>
         <blockquote
           className="p-4"
           style={{
@@ -147,12 +156,12 @@ const SingleProject = () => {
         >
           {project.projectText}
         </blockquote>
-      </h3>
-      <div className="m-3 p-4" style={{ border: '1px solid #655C56', backgroundColor: "#EFFCEF" }}>
+      </h3> */}
+      {/* <div className="" style={{ border: '1px solid #655C56', backgroundColor: "#EFFCEF" }}>
         <TikkitForm projectId={project._id} />
         
-      </div>
-      <div className="my-3">
+      </div> */}
+      <div className="">
         {/* <TikkitList tikkits={project.tikkits} /> */}
         <Dnd />
       </div>
