@@ -80,6 +80,9 @@ function App() {
                 path="/allprojects"
                 element={<AllProjects />}
               />
+               <Route 
+               path="*" 
+               element={<Home />} />
                
             </Routes>
           
