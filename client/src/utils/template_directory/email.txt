@@ -1,0 +1,9 @@
+Hi {{name}}!
+
+Please review this Tikkett!
+
+
+
+If you have any questions or find any issues, big or small, please drop us a note or add an issue to Tikkett! We really appreciate your feedback!
+
+Web Developer {{name}}

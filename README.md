@@ -51,9 +51,8 @@ npm run develop
 
 
 ## License
-<!-- needs correct license -->
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under the EULA License - see the LICENSE.md file for details
 
 ## Acknowledgments
 

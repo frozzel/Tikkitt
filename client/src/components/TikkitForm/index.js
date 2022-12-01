@@ -6,6 +6,8 @@ import { ADD_TIKKIT } from '../../utils/mutations';
 
 import Auth from '../../utils/auth';
 
+import sendemail from './utils/email';
+
 const TikkitForm = ({ projectId }) => {
   const [tikkitText, setTikkitText] = useState('');
  

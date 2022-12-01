@@ -15,5 +15,8 @@
   "license": "EULA",
   "devDependencies": {
     "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "app-notify": "^2.2.2"
   }
 }
