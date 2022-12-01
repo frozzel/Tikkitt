@@ -133,7 +133,7 @@ const Home = () => {
                   <img src={Abigail} alt="dennis head shot"height="100" width="100" />  
                     </button> <span className="name mt-3">Abigail LeConte</span> <span className="idd">aeleconte21@gmail.com</span> 
                       <div className="d-flex flex-row justify-content-center align-items-center gap-2"> <span className="idd1">MERN Developer</span></div> 
-                            <div className="text mt-3">Project Contributions:<br /><br />Wrote out README file & connected AWS email server so generate email notification within application</div> 
+                            <div className="text mt-3">Project Contributions:<br /><br />Wrote out README file & connected AWS email server allowing email notifications to generate within the application! </div> 
                              </div></div>
             </div>
 
