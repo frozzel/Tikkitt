@@ -34,7 +34,9 @@ const SingleProject = () => {
     [uuidv4()]: {
       title: 'To-do',
       items: tikkits,
+      
     },
+    
     [uuidv4()]: {
       title: 'In Progress',
       items: [],
@@ -47,9 +49,13 @@ const SingleProject = () => {
       title: 'Done',
       items: [],
     },
+    
   };
 
- 
+  console.log(testData2);
+  console.log(project);
+  console.log(tikkits);
+ ;
 
 
 

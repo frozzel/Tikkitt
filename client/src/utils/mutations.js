@@ -110,8 +110,8 @@ export const UPDATE_TIKKIT = gql`
 `;
 
 export const DELETE_TIKKIT = gql`
-  mutation removeTikkit($projectId: ID!) {
-    removeTikkit(projectId: $projectId) {
+  mutation removeTikkit( $tikkitId: ID!) {
+    removeTikkit( tikkitId: $tikkitId) {
       _id
       projectText
       projectAuthor

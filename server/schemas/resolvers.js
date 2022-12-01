@@ -68,11 +68,11 @@ const resolvers = {
       return { token, user };
     },
     addProject: async (parent, { projectText, projectName }, context) => {
-      // if (context.user) {
+      if (context.user) {
         const project = await Project.create({
           projectText,
           projectName,
-          projectAuthor: "username",
+          projectAuthor: context.user.username,
         });
 
         await User.findOneAndUpdate(
@@ -81,7 +81,7 @@ const resolvers = {
         );
 
         return project;
-      // }
+      }
       throw new AuthenticationError('You need to be logged in!');
     },
     addTikkit: async (parent, { projectId, tikkitText }, context) => {
@@ -118,32 +118,34 @@ const resolvers = {
       throw new AuthenticationError('You need to be logged in!');
     },
     removeProject: async (parent, { projectId }, context) => {
+       console.log(projectId);
+       
       if (context.user) {
         const project = await Project.findOneAndDelete({
           _id: projectId,
-          projectAuthor: context.user.username,
+        
         });
 
         await User.findOneAndUpdate(
           { _id: context.user._id },
-          { $pull: { projects: project._id } }
+          { $pull: { projects: project._id } },
+          { new: true }
         );
 
         return project;
       }
       throw new AuthenticationError('You need to be logged in!');
     },
-    updateTikkit: async (parent, { projectId }, context) => {
+    updateTikkit: async (parent, {  projectId, $tikkitId, $tikkitText }, context) => {
       if (context.user) {
         const project = await Project.findOneAndUpdate({
           _id: projectId,
-          projectAuthor: context.user.username,
-          dueDate, 
-        });
-
-        await User.findOneAndUpdate(
-          { _id: context.user._id },
-          { $push: { projects: project._id } }
+      
+        },
+        
+        
+          { $push: { tikkits: {  $tikkitId, $tikkitText } } },
+          { new: true }
         );
 
         return project;
@@ -157,11 +159,12 @@ const resolvers = {
 
         return Project.findOneAndUpdate(
           { _id: projectId },
+        
           {
             $pull: {
               tikkits: {
                 _id: tikkitId,
-                tikkitAuthor: context.user.username,
+                
               },
             },
           },

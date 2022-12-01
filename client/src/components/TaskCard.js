@@ -13,16 +13,17 @@ import Auth from '../utils/auth';
 
 
 const TaskCard = ({ item, index }) => {
-
+console.log(item)
     const [removeTikkit, { error }] = useMutation(DELETE_TIKKIT);
     
      
     
     
     
-    const handleDeleteTikkit= async (projectId) => {
+    const handleDeleteTikkit= async (projectId, tikkitId) => {
       console.log(projectId)
       console.log(item._id)
+      console.log(tikkitId)
       const token = Auth.loggedIn() ? Auth.getToken() : null;
     console.log(token)
       if (!token) {
@@ -31,7 +32,7 @@ const TaskCard = ({ item, index }) => {
     
       
          await removeTikkit({
-          variables: { projectId }
+          variables: { projectId, tikkitId }
         });
      
     };
