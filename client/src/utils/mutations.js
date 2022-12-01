@@ -57,8 +57,8 @@ mutation addProject($projectText: String!,$projectName: String!) {
 `;
 
 export const DELETE_PROJECT = gql`
-mutation deleteProject($projectText: String!,$projectName: String!) {
-  deleteProject(projectText: $projectText, projectName: $projectName) {
+mutation removeProject($projectId: ID!) {
+  removeProject(projectId: $projectId) {
     _id
     projectText
     projectAuthor
@@ -110,8 +110,8 @@ export const UPDATE_TIKKIT = gql`
 `;
 
 export const DELETE_TIKKIT = gql`
-  mutation deleteTikkit($projectId: ID!, $tikkitText: String!) {
-    deleteTikkit(projectId: $projectId, tikkitText: $tikkitText) {
+  mutation removeTikkit($projectId: ID!) {
+    removeTikkit(projectId: $projectId) {
       _id
       projectText
       projectAuthor

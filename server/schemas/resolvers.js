@@ -68,7 +68,7 @@ const resolvers = {
       return { token, user };
     },
     addProject: async (parent, { projectText, projectName }, context) => {
-      if (context.user) {
+      // if (context.user) {
         const project = await Project.create({
           projectText,
           projectName,
@@ -81,7 +81,7 @@ const resolvers = {
         );
 
         return project;
-      }
+      // }
       throw new AuthenticationError('You need to be logged in!');
     },
     addTikkit: async (parent, { projectId, tikkitText }, context) => {
@@ -151,7 +151,10 @@ const resolvers = {
       throw new AuthenticationError('You need to be logged in!');
     },
     removeTikkit: async (parent, { projectId, tikkitId }, context) => {
+      console.log(projectId)
+      console.log(tikkitId)
       if (context.user) {
+
         return Project.findOneAndUpdate(
           { _id: projectId },
           {

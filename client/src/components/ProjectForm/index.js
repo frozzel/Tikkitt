@@ -11,6 +11,7 @@ const ProjectForm = () => {
   const [projectState, setProjectState] = useState({
     projectText: '',
     projectName: '',
+    
   })
   
   

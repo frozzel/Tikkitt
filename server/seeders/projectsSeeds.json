@@ -2,12 +2,43 @@
   {
     "projectText": "Everyone knows that debugging is twice as hard as writing a program in the first place. So if you're as clever as you can be when you write it, how will you ever debug it?",
     "projectAuthor": "Brian Kernighan",
-    "projectName": "Test1"
+    "projectName": "Test1",
+    "tikkits":
+      [
+      {
+      "tikkitText": "just another test",
+      "tikkitAuthor": "MichaelJordan",
+      "dueDate": "6/12/23"
   },
+  {
+      "tikkitText": "writing something here",
+      "tikkitAuthor": "drbob",
+      "dueDate": "2/14/23"
+  },
+  {
+      "tikkitText": "a person wrote something here",
+      "tikkitAuthor": "jean",
+      "dueDate": "7/7/23"
+  }    
+]
+},
   {
     "projectText": "Some of the best programming is done on paper, really. Putting it into the computer is just a minor detail.",
     "projectAuthor": "Max Kanat-Alexander",
-    "projectName": "Test2"
+    "projectName": "Test2",
+    "tikkits":
+    [
+      {
+          "tikkitText": "this is a test",
+          "tikkitAuthor": "someone",
+          "dueDate": "10/22/23"
+      }, 
+      {
+          "tikkitText": "just saying something",
+          "tikkitAuthor": "garybusey",
+          "dueDate": "9/14/23"
+      }
+    ]
   },
   {
     "projectText": "When you don't create things, you become defined by your tastes rather than ability. Your tastes only narrow & exclude people. So create.",

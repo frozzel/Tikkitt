@@ -51,6 +51,9 @@ const handleDeleteTikkit= async (projectId) => {
                   <span style={{ fontSize: '0.825rem' }}>
                     on {tikkit.createdAt}
                   </span>
+                  <button className="btn btn-sm btn-danger " onSubmit={ handleDeleteTikkit(tikkit._id)}>
+                Delete
+              </button>
                 </h5>
                 <p className="card-body">{tikkit.tikkitText}</p>
                 <div className="col-12 col-lg-3">

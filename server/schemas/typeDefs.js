@@ -55,7 +55,7 @@ const typeDefs = gql`
     updateProject(projectId: ID!): Project
     updateTikkit(projectId: ID!, tikkitText: String!, dueDate: String!): Project
     removeProject(projectId: ID!): Project
-    removeTikkit(projectId: ID!, tikkitId: ID!): Project
+    removeTikkit(projectId: ID!): Project
   }
 `;
 
