@@ -13,7 +13,8 @@ import {
   faReact,
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import {faRocket} from '@fortawesome/free-solid-svg-icons';
+import Snowfall from 'react-snowfall';
 
 
 
@@ -148,7 +149,41 @@ const Home = () => {
         <div className='Text4 col-12'><h1>& many more!</h1></div>
         </div>
 
+        <div className='sect6 flex-row'>
+        <div className="App-logo">
+          <div> <FontAwesomeIcon className='App-logo ' icon={faRocket} color="#FFE1E1" /></div>
+          <Snowfall color="#94D3AC" style={{opacity: '.4' }} snowflakeCount={300}/>
+          </div>
+          <h1 className='text6'>THE FUTURE IS OPEN WIDE!</h1>
+          <div className="content">
+  <div className="content__container">
+    <p className="content__container__text">
+     
+    </p>
+    
+    <ul className="content__container__list">
+      <li className="content__container__list__item">File Sharing</li>
+      <li className="content__container__list__item">SMS Notifications</li>
+      <li className="content__container__list__item">Built In Chat Rooms</li>
+      <li className="content__container__list__item">Calendar Integration!</li>
+    </ul>
+  </div>
+</div>
 
+
+
+
+
+
+        </div>
+
+        <div className='sect7 flex-row'>
+        <h1>&copy; Tikkitt is ment for educational purposes only, No reproduction permitted.</h1>
+        <a href="https://pngtree.com/freepng/linear-color-project-cooperation-global-strategy-business-cooperation-ui-design_4867105.html"><h1>&copy; pngtree author: 云川  images used on site are not for commercial use without purchase.</h1></a>
+
+      
+
+        </div>
     </main>
   );
 };
