@@ -1,5 +1,5 @@
 <div>
-<a href=""><img src="https://github.com/frozzel/Tikkitt/blob/b946d6711fee933b84ad5ddec6a2a993029d920b/Tikkitt-Banner.png" align="center" height="" width="100%" ></a></div>
+<a href=""><img src="https://github.com/frozzel/Tikkitt/blob/cbf6968fe81d394f9dc7274849b7ac9394f367a4/client/src/components/Header/logo.svg" align="center" height="" width="100%" ></a></div>
 
 
 ---
@@ -23,6 +23,12 @@ Tikkett is an American cloud-based software company headquartered in Atlanta, GA
 
 ## Getting Started
 
+ [Vist Our Site](https://tikkitt.herokuapp.com/)
+
+
+![Screen Shots](./client/src/images/Shot1.png)
+![Screen Shots2](./client/src/images/Shot2.png)
+
 ### Dependancies
 To run this application, you'll need to run the following commands:
 <!-- Let me know what else is needed to run this app -->
@@ -34,26 +40,18 @@ npm run develop
 ````
 
 
-
-
-<!-- ## Resources:
-* [Bootstrap](https://react-bootstrap.github.io/getting-started/introduction)
-* [Colorhunt Palette](https://colorhunt.co/palette/effcefccedd294d3ac655c56)
-* [Alvarotrigo](https://alvarotrigo.com/blog/css-text-animations/)
-* [Slider Revolution](https://www.sliderrevolution.com/resources/css-text-animation/) -->
-
 ## Authors / Web Developers
-<!-- need correct links for profiles -->
+
 * Dennis Hickox - [GitHub](https://github.com/frozzel)
-* Jessica Ciak - [GitHub](link)
-* Josh Adam - [GitHub](link)
+* Jessica Ciak - [GitHub](https://github.com/jesciak)
+* Josh Adam - [GitHub](https://github.com/meloard)
 * Abigail LeConte - [GitHub](https://github.com/AbigailLeConte)
 
 
 ## License
-<!-- needs correct license -->
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+
+This project is licensed under the EULA License - see the LICENSE.md file for details
 
 ## Acknowledgments
 
@@ -63,10 +61,9 @@ Inspiration, code snippets, etc.
 * [Colorhunt Palette](https://colorhunt.co/palette/effcefccedd294d3ac655c56)
 * [Alvarotrigo](https://alvarotrigo.com/blog/css-text-animations/)
 * [Slider Revolution](https://www.sliderrevolution.com/resources/css-text-animation/)
+* [PNG Tree](https://pngtree.com/so/project-managment)
+* [Free Frontend](https://freefrontend.com/bootstrap-profiles/)
 
 
-https://pngtree.com/so/project-managment
-
-https://freefrontend.com/bootstrap-profiles/
 
 
